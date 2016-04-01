@@ -1,0 +1,312 @@
+/* //////////////////////////////////////////////////////////// */
+/* THIS TEMPLATE HAS BEEN CREATED USING THIS METHOD BY NICOLE MERLIN */
+
+/* http://webdesign.tutsplus.com/tutorials/creating-a-future-proof-responsive-email-without-media-queries--cms-23919 */
+
+/* WHAT IS DIFFERENT ? */
+
+/* When i discovered this tutorial, I thought it was so strong and stable I decided to build a framework arround it. the goal here is to help designers undertand how to create for newsletters and make the process lighter for coders and also designers. Seriously, read this article. It is the best way to create emails on earth.
+*/
+
+/* HOW TO PROCEED WITH THE CSS */
+
+    /* As mentioned in the tutorial up here, you have to put the code into an inliner to apply the styles to the html (it saves a lot of time and avoid a lot of mistakes and Oversights).
+    
+    - To create your own template
+    
+        - choose your modules (you can create new ones using the grid structure). Be sure to adapt the grid dimentions to the conditionnal comments to avoid break on outlook
+        - create styles and apply thoses classes to the html
+        - build your images using the psd "visuels-taille-1"
+        - profit
+
+    - How to put the CSS inline (because gmail strips the styles in the <head> section)
+        
+        - create a <style type="text/css"></style> to replace <link rel="stylesheet" type="text/css" href="styles-perso-1.css" /> in the <head> section of your html
+        
+        - put the css of this document in it eccept "MEDIA QUERIES"
+
+        - after get back your code inlined, erase from the <style type="text/css"></style> tag any CSS that isn't "BASIC RESETS" and add "MEDIA QUERIES".
+
+    - Your email is ready to be tested
+
+    */
+
+/* //////////////////////////////////////////////////////////// */
+
+/* MODULE SPACER (it doesnt belong to any style. It is here to visiualy set the limit betwin the frameworks modules) */
+
+.modulespacer{text-align: center; color: crimson; font-weight: 700; font-size: 16px; text-transform: uppercase;}
+.modulespacertext {text-align: justify; color: crimson; font-weight: 400; font-size: 14px;}
+.modulespacersmall{color: crimson; font-weight: 400; font-size: 13px;text-transform: lowercase;}
+
+/* ///////////// BASIC RESETS ///////////// */
+
+body {Margin: 0;padding: 0;min-width: 100%;-webkit-font-smoothing: antialiased;}
+a[x-apple-data-detectors] {color: inherit !important;text-decoration: none !important;font-size: inherit !important;font-family: inherit !important;font-weight: inherit !important;line-height: inherit !important;}
+table {border-spacing: 0;}
+td {padding: 0;}
+img {border: 0;}
+.wrapper {width: 100%;table-layout: fixed;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+.webkit {max-width: 600px;}
+.outer {Margin: 0 auto;width: 100%;max-width: 600px;}
+
+
+
+/* ///////////// STRUCTURE GRID ///////////// */
+
+.row {text-align: center;font-size: 0;}
+.full-width-image img {width: 100%;max-width: 600px;height: auto;}
+
+/* 2 columns */
+.col2 {width: 100%;max-width: 300px;display: inline-block;vertical-align: top;}
+.col2 img {width: 100%;max-width: 300px;height: auto;}
+.col2 .prod {width: 100%;max-width: 130px;height: auto;}
+
+/* 3 columns */
+.col3 {width: 100%;max-width: 200px;display: inline-block;vertical-align: top;}
+.col3 img {width: 100%;max-width: 200px;height: auto;}
+.col32 {width: 100%;max-width: 400px;display: inline-block;vertical-align: top;}
+.col32 img {width: 100%;max-width: 400px;height: auto;}
+
+/* 4 columns */
+.col4 {width: 100%;max-width: 150px;display: inline-block;vertical-align: top;}
+.col4 img {width: 100%;max-width: 150px;height: auto;}
+.col42 {width: 100%;max-width: 300px;display: inline-block;vertical-align: top;}
+.col42 img {width: 100%;max-width: 300px;height: auto;}
+.col43 {width: 100%;max-width: 450px;display: inline-block;vertical-align: top;}
+.col43 img {width: 100%;max-width: 450px;height: auto;}
+
+/* 5 columns */
+.col5 {width: 100%;max-width: 120px;display: inline-block;vertical-align: top;}
+.col5 img {width: 100%;max-width: 120px;height: auto;}
+.col52 {width: 100%;max-width: 240px;display: inline-block;vertical-align: top;}
+.col52 img {width: 100%;max-width: 240px;height: auto;}
+.col53 {width: 100%;max-width: 360px;display: inline-block;vertical-align: top;}
+.col53 img {width: 100%;max-width: 360px;height: auto;}
+.col54 {width: 100%;max-width: 480px;display: inline-block;vertical-align: top;}
+.col54 img {width: 100%;max-width: 480px;height: auto;}
+
+/* 6 columns */
+.col6 {width: 100%;max-width: 100px;display: inline-block;vertical-align: top;}
+.col6 img {width: 100%;max-width: 100px;height: auto;}
+.col62 {width: 100%;max-width: 200px;display: inline-block;vertical-align: top;}
+.col62 img {width: 100%;max-width: 200px;height: auto;}
+.col63 {width: 100%;max-width: 300px;display: inline-block;vertical-align: top;}
+.col63 img {width: 100%;max-width: 300px;height: auto;}
+.col64 {width: 100%;max-width: 400px;display: inline-block;vertical-align: top;}
+.col64 img {width: 100%;max-width: 400px;height: auto;}
+.col65 {width: 100%;max-width: 500px;display: inline-block;vertical-align: top;}
+.col65 img {width: 100%;max-width: 500px;height: auto;}
+
+/* 8 columns */
+.col8 {width: 100%;max-width: 75px;display: inline-block;vertical-align: top;}
+.col8 img {width: 100%;max-width: 75px;height: auto;}
+.col82 {width: 100%;max-width: 150px;display: inline-block;vertical-align: top;}
+.col82 img {width: 100%;max-width: 150px;height: auto;}
+.col83 {width: 100%;max-width: 225px;display: inline-block;vertical-align: top;}
+.col83 img {width: 100%;max-width: 225px;height: auto;}
+.col84 {width: 100%;max-width: 300px;display: inline-block;vertical-align: top;}
+.col84 img {width: 100%;max-width: 300px;height: auto;}
+.col85 {width: 100%;max-width: 375px;display: inline-block;vertical-align: top;}
+.col85 img {width: 100%;max-width: 375px;height: auto;}
+.col86 {width: 100%;max-width: 450px;display: inline-block;vertical-align: top;}
+.col86 img {width: 100%;max-width: 450px;height: auto;}
+.col87 {width: 100%;max-width: 525px;display: inline-block;vertical-align: top;}
+.col87 img {width: 100%;max-width: 525px;height: auto;}
+
+
+/* columns that don't reduce their size to stay side bay side betwin 400 and 600px */
+/* use it to replace corresponding sized columns */
+.sidebar75 {width: 100%;max-width: 75px;display: inline-block;vertical-align: top;}
+.sidebar75 img {width: 100%;max-width: 75px;height: auto;}
+.sidebar100 {width: 100%;max-width: 100px;display: inline-block;vertical-align: top;}
+.sidebar100 img {width: 100%;max-width: 400px;height: auto;}
+.sidebar120 {width: 100%;max-width: 120px;display: inline-block;vertical-align: middle;}
+.sidebar120 img {width: 100%;max-width: 120px;height: auto;}
+.sidebar150 {width: 100%;max-width: 150px;display: inline-block;vertical-align: middle;}
+.sidebar150 img {width: 100%;max-width: 150px;height: auto;}
+.sidebar200 {width: 100%;max-width: 200px;display: inline-block; vertical-align: top;}
+.sidebar200 img {width: 100%;max-width: 200px;height: auto;}
+.sidebar225 {width: 100%;max-width: 225px;display: inline-block;vertical-align: top;}
+.sidebar225 img {width: 100%;max-width: 225px;height: auto;}
+.sidebar240 {width: 100%;max-width: 240px;display: inline-block;vertical-align: top;}
+.sidebar240 img {width: 100%;max-width: 240px;height: auto;}
+.sidebar300 {width: 100%;max-width: 300px;display: inline-block;vertical-align: top;}
+.sidebar300 img {width: 100%;max-width: 300px;height: auto;}
+.sidebar360 {width: 100%;max-width: 360px;display: inline-block;vertical-align: top;}
+.sidebar360 img {width: 100%;max-width: 360px;height: auto;}
+.sidebar375 {width: 100%;max-width: 375px;display: inline-block;vertical-align: top;}
+.sidebar375 img {width: 100%;max-width: 375px;height: auto;}
+.sidebar400 {width: 100%;max-width: 400px;display: inline-block;vertical-align: top;}
+.sidebar400 img {width: 100%;max-width: 400px;height: auto;}
+.sidebar450 {width: 100%;max-width: 450px;display: inline-block;vertical-align: top;}
+.sidebar450 img {width: 100%;max-width: 450px;height: auto;}
+.sidebar480 {width: 100%;max-width: 480px;display: inline-block;vertical-align: top;}
+.sidebar480 img {width: 100%;max-width: 480px;height: auto;}
+.sidebar500 {width: 100%;max-width: 500px;display: inline-block;vertical-align: top;}
+.sidebar500 img {width: 100%;max-width: 500px;height: auto;}
+.sidebar525 {width: 100%;max-width: 525px;display: inline-block;vertical-align: top;}
+.sidebar525 img {width: 100%;max-width: 525px;height: auto;}
+
+
+/* CONTENTS ALIGNMENTS */
+/* everything except .content-center will remain as on desktop in the gmail app. Design carefully knoing that. Still, the email will be readable. */
+.contents-justify {width: 100%; text-align: justify; vertical-align: top;}
+.contents-left {width: 100%; text-align: left; vertical-align: top;}
+.contents-center {width: 100%; text-align: center; vertical-align: top;}
+.contents-right {width: 100%; text-align: right; vertical-align: top;}
+.contents-justify-middle {width: 100%; text-align: justify; vertical-align: middle !important;}
+.contents-left-middle {width: 100%; text-align: left; vertical-align: middle !important;}
+.contents-center-middle {width: 100%; text-align: center; vertical-align: middle !important;}
+.contents-right-middle {width: 100%; text-align: right; vertical-align: middle !important;}
+
+
+/* ALL PADDINGS */
+.inner10 {padding: 10px;vertical-align: top;}
+.inner20 {padding: 20px;vertical-align: top;}
+.inner0-10 {padding:0 10px; vertical-align: top;}
+.inner0-20 {padding:0 20px; vertical-align: top;}
+.inner10-0 {padding:10px 0; vertical-align: top;}
+.inner20-0 {padding:20px 0; vertical-align: top;}
+.inner10-0 {padding:10px 0; vertical-align: top;}
+.inner20-0 {padding:20px 0; vertical-align: top;}
+.inner10-10-0-10 {padding:10px 10px 0px 10px; vertical-align: top}
+.inner20-20-0-20 {padding:20px 20px 0px 20px; vertical-align: top}
+.inner0-10-10-10 {padding:0px 10px 10px 10px; vertical-align: top}
+.inner0-20-20-20 {padding:0px 20px 20px 20px; vertical-align: top}
+
+
+/* FIXED IMAGES */
+.logo {width: 180px !important; height: 50px !impotant;}
+.imgfooter {width: 37px !important; height: 37px !important; vertical-align: middle;margin-left: 5px;margin-right: 5px;}
+.imgsocial {width: 27px !important; height: 27px !important; vertical-align: middle;margin-left: 5px;margin-right: 5px;}
+
+
+
+/* ///////////// STYLES ///////////// */
+
+/* GENERAL BACKGROUND COLORS */
+body{background-color: #f7f7f7;}
+.wrapper{background-color: #f7f7f7;}
+.webkit{background-color: #ffffff;}
+.outer{background-color: #ffffff;}
+
+/* GENERAL TYPE */
+.text {padding-top: 10px;}
+.text2 {padding-top:5px;}
+table {font-family: 'Quicksand', sans-serif;color: #333333;}
+td{font-family:'Quicksand', sans-serif;font-size: 14px;-webkit-font-smoothing: antialiased;color: #333333;}
+p {Margin: 0;font-size: 16px;-webkit-font-smoothing: antialiased;}
+.small {Margin: 0;font-size: 12px; font-weight: 700;-webkit-font-smoothing: antialiased;}
+a {text-decoration: none;-webkit-font-smoothing: antialiased;}
+.h1 {font-family: 'Francois One', sans-serif;font-size: 30px;font-weight: 400;Margin-bottom: 18px;text-transform: uppercase;-webkit-font-smoothing: antialiased;}
+.h2 {font-family: 'Francois One', sans-serif;font-size: 18px;font-weight: 400;Margin-bottom: 12px;text-transform: uppercase;-webkit-font-smoothing: antialiased;}
+.h3 {font-family: 'Francois One', sans-serif;font-size: 14px;font-weight: 400;Margin-bottom: 12px;text-transform: uppercase;-webkit-font-smoothing: antialiased;}
+.discount {font-family: 'Francois One', sans-serif;font-size: 11px;font-weight: normal;Margin-bottom: 12px;text-transform: uppercase;text-decoration: line-through;-webkit-font-smoothing: antialiased;}
+.h6 {font-family: 'Quicksand', sans-serif;font-size: 10px;font-weight: 400;text-decoration: none;-webkit-font-smoothing: antialiased;}
+
+/* BUTTONS */
+/* large */
+.btn {display: inline-block; text-align: center;}
+.btn a {font-size: 14px; font-family: 'Quicksand', sans-serif; background-color: #333333; color: #ffffff; font-weight: 700; text-decoration: none; border: 8px solid #333333; border-radius: 4px; display: inline-block;-webkit-font-smoothing: antialiased;}
+.btn a:hover{background-color: #ffffff !important; border-color:#ffffff !important; color:#333333 !important;}
+
+/* small */
+.btn-small {display: inline-block; text-align: center;}
+.btn-small a {font-size: 11px; font-family: 'Quicksand', sans-serif; background-color: #333333; color: #ffffff; font-weight: 700; text-decoration: none; border: 6px solid #333333; border-radius: 3px; display: inline-block;-webkit-font-smoothing: antialiased;}
+.btn-small a:hover{background-color: #ffffff !important; border-color:#ffffff !important; color:#333333 !important;}
+
+/* extra small */
+.btn-xsmall {display: inline-block; text-align: center;}
+.btn-xsmall a {font-size: 10px; font-family: 'Quicksand', sans-serif; background-color: #333333; color: #ffffff; font-weight: 700; text-decoration: none; border: 4px solid #333333; border-radius: 2px; display: inline-block;-webkit-font-smoothing: antialiased;}
+.btn-xsmall a:hover{background-color: #ffffff !important; border-color:#ffffff !important; color:#333333 !important;}
+
+/* white large */
+.btnw {display: inline-block; text-align: center;}
+.btnw a {font-size: 14px; font-family: 'Quicksand', sans-serif; background-color: #ffffff; color: #333333; font-weight: 700; text-decoration: none; border: 8px solid #ffffff; border-radius: 4px; display: inline-block;-webkit-font-smoothing: antialiased;}
+.btnw a:hover{background-color: #333333 !important; border-color:#333333 !important; color:#ffffff !important;}
+
+/* white small */
+.btnw-small {display: inline-block; text-align: center;}
+.btnw-small a {font-size: 11px; font-family: 'Quicksand', sans-serif; background-color: #ffffff; color: #000000; font-weight: 700; text-decoration: none; border: 6px solid #ffffff; border-radius: 3px; display: inline-block;-webkit-font-smoothing: antialiased;}
+.btnw-small a:hover{background-color: #000000 !important; border-color:#000000 !important; color:#ffffff !important;}
+
+/* white extra small */
+.btnw-xsmall {display: inline-block; text-align: center;}
+.btnw-xsmall a {font-size: 10px; font-family: 'Quicksand', sans-serif; background-color: #ffffff; color: #000000; font-weight: 700; text-decoration: none; border: 4px solid #ffffff; border-radius: 2px; display: inline-block;-webkit-font-smoothing: antialiased;}
+.btnw-xsmall a:hover{background-color: #000000 !important; border-color:#000000 !important; color:#ffffff !important;}
+
+
+/* CODE */
+.bandeaucode {background-color:#333333; color:#ffffff;}
+.code {display: inline-block; text-align: center;border: 1px solid #ffffff;}
+.code div {font-size: 14px; font-family: 'Quicksand', sans-serif; color: #ffffff; font-weight: 700; text-decoration: none; border: 7px solid #333333; display: inline-block;-webkit-font-smoothing: antialiased;}
+
+
+
+/* SIMPLE MENU */
+/* It's just a row with styled buttons inside */
+/* the conditionnal comments are important to make the menu look good on outlook. make sure to test your email to see if their size is correct */
+.menua {display: inline-block; text-align: center;}
+.menua a {font-size: 11px; font-family: 'Quicksand', sans-serif; color: #333333; font-weight: 700; text-transform: uppercase; text-decoration: none; padding: 4px; display: inline-block;}
+.menua a:hover{background-color: #333333; border-color:#333333; color:#ffffff;}
+
+
+/* ADVANCED MENU */
+.column-large {width: 100%;max-width: 111px;display: inline-block;vertical-align: top;}/* spetial column with width not aligned on the grid (you must adapt the width of the conditionnal comments)*/
+.column-small {width: 100%;max-width: 78px;display: inline-block;vertical-align: top;}/* spetial column with width not aligned on the grid (you mudt adapt the width of the conditionnal comments) */
+.menub {display: inline-block; text-align: center;}
+.menub a {font-size: 11px; font-family: 'Quicksand', sans-serif; color: #333333; font-weight: 700; text-transform: uppercase; text-decoration: none; padding:4px; display: inline-block;}
+.menub a:hover{background-color: #333333; border-color:#333333; color:#ffffff;}
+
+
+/* FOOTER */
+.footer{background-color:#d9dce3;}
+.footer .h2, .footer .h3, .footer .small {color:#333333;}
+.footer-left{width:100%;max-width: 280px;display: inline-block;vertical-align: top;} /* spetial column with width not aligned on the grid (be sure to adapt the width of the conditionnal comments) */
+.footer-right{width:100%;max-width: 320px;display: inline-block;vertical-align: top;} /* spetial column with width not aligned on the grid (be sure to adapt the width of the conditionnal comments) */
+.borderfooter{border-top:1px solid #333333;}
+
+
+/* LEGAL NOTICES */
+.cgv{background-color:#f7f7f7;}
+.cgv a{text-decoration: underline;}
+
+
+
+
+/* ///////////// MEDIA QUERIES ///////////// */
+
+
+@media screen and (max-width: 320px){
+    .menu{display: none !important;}
+}
+
+@media screen and (max-width: 400px) {
+    .col2, .col32, .col42, .col43, .col52, .col53, .col54, .col62, .col63, .col64, .col65, .col83, .col84, col85, .col86, .col87, .sidebar200, .sidebar240, .sidebar300, .sidebar360, .sidebar400, .sidebar450, .sidebar480, .sidebar500 {max-width: 100% !important;}    
+    .col4, .col3, .col5 {max-width: 50% !important;}
+    .col6 {max-width: 33% !important;}
+    .col8 {max-width: 25% !important;}
+    .col82 {max-width: 75% !important;}
+    .col2 img, .col3 img, .col32 img, .col4 img, .col42 img, .col43 img, col5 img, .col52 img, .col53 img, col54 img, .col6 img, .col62 img, .col63 img, .col64 img, .col65 img {max-width: 100% !important;}   
+    .sidebar200 img, .sidebar240 img, .sidebar300 img, .sidebar360 img, .sidebar400 img, .sidebar450 img, .sidebar480 img, .sidebar500 img {max-width: 100% !important;}    
+    .ninja {display:none !important;}
+   
+    /* center text and buttons */
+    .contents-justify, .contents-left, .contents-right, .contents-justify-middle, .contents-left-middle, .contents-right-middle {font-size: 16px;text-align: center !important;}
+}
+
+@media screen and (max-width: 590px) {
+    .sidebar120, .sidebar75, .sidebar100, .sidebar150, .sidebar200, .sidebar225, .sidebar240, .sidebar300, .sidebar360, .sidebar375, .sidebar400, .sidebar450, .sidebar480, .sidebar500, .sidebar525 {max-width: 100% !important;}
+    .col2 .img {max-width: 100% !important;}
+    .col2 .prod {max-width: 100% !important;}
+    .col32 .contents-justify, .col32 .contents-left, .col32 .contents-right, .footer-left .contents-right, .footer-right .contents-left {font-size: 16px;text-align: center !important;}
+}
+
+@media screen and (min-width: 401px) and (max-width: 620px) {
+    .col3, .col62, {max-width: 33% !important;}
+    .col2, .col42, .col63, {max-width: 50% !important;}
+    .col4, {max-width: 25% !important;}
+    .col5, {max-width: 20% !important;}
+    .col6, {max-width: 16% !important;}
+}
