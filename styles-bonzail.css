@@ -288,7 +288,7 @@ a {text-decoration: none;-webkit-font-smoothing: antialiased;}
     .col6 {max-width: 33% !important;}
     .col8 {max-width: 25% !important;}
     .col82 {max-width: 75% !important;}
-    .col2 img, .col3 img, .col32 img, .col4 img, .col42 img, .col43 img, col5 img, .col52 img, .col53 img, col54 img, .col6 img, .col62 img, .col63 img, .col64 img, .col65 img {max-width: 100% !important;}   
+    .col2 img, .col3 img, .col32 img, .col4 img, .col42 img, .col43 img, .col5 img, .col52 img, .col53 img, .col54 img, .col6 img, .col62 img, .col63 img, .col64 img, .col65 img {max-width: 100% !important;}   
     .sidebar200 img, .sidebar240 img, .sidebar300 img, .sidebar360 img, .sidebar400 img, .sidebar450 img, .sidebar480 img, .sidebar500 img {max-width: 100% !important;}    
     .ninja {display:none !important;}
    
@@ -298,15 +298,15 @@ a {text-decoration: none;-webkit-font-smoothing: antialiased;}
 
 @media screen and (max-width: 590px) {
     .sidebar120, .sidebar75, .sidebar100, .sidebar150, .sidebar200, .sidebar225, .sidebar240, .sidebar300, .sidebar360, .sidebar375, .sidebar400, .sidebar450, .sidebar480, .sidebar500, .sidebar525 {max-width: 100% !important;}
-    .col2 .img {max-width: 100% !important;}
+    .col2 img {max-width: 100% !important;}
     .col2 .prod {max-width: 100% !important;}
     .col32 .contents-justify, .col32 .contents-left, .col32 .contents-right, .footer-left .contents-right, .footer-right .contents-left {font-size: 16px;text-align: center !important;}
 }
 
 @media screen and (min-width: 401px) and (max-width: 620px) {
-    .col3, .col62, {max-width: 33% !important;}
+    .col3, .col62 {max-width: 33% !important;}
     .col2, .col42, .col63, {max-width: 50% !important;}
-    .col4, {max-width: 25% !important;}
-    .col5, {max-width: 20% !important;}
-    .col6, {max-width: 16% !important;}
+    .col4 {max-width: 25% !important;}
+    .col5 {max-width: 20% !important;}
+    .col6 {max-width: 16% !important;}
 }
