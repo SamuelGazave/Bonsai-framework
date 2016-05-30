@@ -283,7 +283,7 @@ a {text-decoration: none;-webkit-font-smoothing: antialiased;}
 }
 
 @media screen and (max-width: 400px) {
-    .col2, .col32, .col42, .col43, .col52, .col53, .col54, .col62, .col63, .col64, .col65, .col83, .col84, col85, .col86, .col87, .sidebar200, .sidebar240, .sidebar300, .sidebar360, .sidebar400, .sidebar450, .sidebar480, .sidebar500 {max-width: 100% !important;}    
+    .col2, .col32, .col42, .col43, .col52, .col53, .col54, .col62, .col63, .col64, .col65, .col83, .col84, .col85, .col86, .col87, .sidebar200, .sidebar240, .sidebar300, .sidebar360, .sidebar400, .sidebar450, .sidebar480, .sidebar500 {max-width: 100% !important;}    
     .col4, .col3, .col5 {max-width: 50% !important;}
     .col6 {max-width: 33% !important;}
     .col8 {max-width: 25% !important;}
@@ -305,7 +305,7 @@ a {text-decoration: none;-webkit-font-smoothing: antialiased;}
 
 @media screen and (min-width: 401px) and (max-width: 620px) {
     .col3, .col62 {max-width: 33% !important;}
-    .col2, .col42, .col63, {max-width: 50% !important;}
+    .col2, .col42, .col63 {max-width: 50% !important;}
     .col4 {max-width: 25% !important;}
     .col5 {max-width: 20% !important;}
     .col6 {max-width: 16% !important;}
