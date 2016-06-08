@@ -55,7 +55,10 @@ img {border: 0;}
 /* ///////////// STRUCTURE GRID ///////////// */
 
 .row {text-align: center;font-size: 0;}
-.full-width-image img {width: 100%;max-width: 600px;height: auto;}
+
+/* 1 columns */
+.col1 {vertical-align: top;}
+.col1 img {width: 100%;max-width: 600px;height: auto;} /* put the "col1" class a the "row" class place on when you just want a single column */
 
 /* 2 columns */
 .col2 {width: 100%;max-width: 300px;display: inline-block;vertical-align: top;}
