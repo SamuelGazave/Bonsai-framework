@@ -117,39 +117,38 @@ img {border: 0;}
 .col87 {width: 100%;max-width: 525px;display: inline-block;vertical-align: top;}
 .col87 img {width: 100%;max-width: 525px;height: auto;}
 
-
-/* columns that don't reduce their size to stay side bay side betwin 400 and 600px */
+/* these columns directly goes 100% wide betwin 400 and 600px */
 /* use it to replace corresponding sized columns */
-.sidebar75 {width: 100%;max-width: 75px;display: inline-block;vertical-align: top;}
-.sidebar75 img {width: 100%;max-width: 75px;height: auto;}
-.sidebar100 {width: 100%;max-width: 100px;display: inline-block;vertical-align: top;}
-.sidebar100 img {width: 100%;max-width: 400px;height: auto;}
-.sidebar120 {width: 100%;max-width: 120px;display: inline-block;vertical-align: middle;}
-.sidebar120 img {width: 100%;max-width: 120px;height: auto;}
-.sidebar150 {width: 100%;max-width: 150px;display: inline-block;vertical-align: middle;}
-.sidebar150 img {width: 100%;max-width: 150px;height: auto;}
-.sidebar200 {width: 100%;max-width: 200px;display: inline-block; vertical-align: top;}
-.sidebar200 img {width: 100%;max-width: 200px;height: auto;}
-.sidebar225 {width: 100%;max-width: 225px;display: inline-block;vertical-align: top;}
-.sidebar225 img {width: 100%;max-width: 225px;height: auto;}
-.sidebar240 {width: 100%;max-width: 240px;display: inline-block;vertical-align: top;}
-.sidebar240 img {width: 100%;max-width: 240px;height: auto;}
-.sidebar300 {width: 100%;max-width: 300px;display: inline-block;vertical-align: top;}
-.sidebar300 img {width: 100%;max-width: 300px;height: auto;}
-.sidebar360 {width: 100%;max-width: 360px;display: inline-block;vertical-align: top;}
-.sidebar360 img {width: 100%;max-width: 360px;height: auto;}
-.sidebar375 {width: 100%;max-width: 375px;display: inline-block;vertical-align: top;}
-.sidebar375 img {width: 100%;max-width: 375px;height: auto;}
-.sidebar400 {width: 100%;max-width: 400px;display: inline-block;vertical-align: top;}
-.sidebar400 img {width: 100%;max-width: 400px;height: auto;}
-.sidebar450 {width: 100%;max-width: 450px;display: inline-block;vertical-align: top;}
-.sidebar450 img {width: 100%;max-width: 450px;height: auto;}
-.sidebar480 {width: 100%;max-width: 480px;display: inline-block;vertical-align: top;}
-.sidebar480 img {width: 100%;max-width: 480px;height: auto;}
-.sidebar500 {width: 100%;max-width: 500px;display: inline-block;vertical-align: top;}
-.sidebar500 img {width: 100%;max-width: 500px;height: auto;}
-.sidebar525 {width: 100%;max-width: 525px;display: inline-block;vertical-align: top;}
-.sidebar525 img {width: 100%;max-width: 525px;height: auto;}
+.col8-hh-full {width: 100%;max-width: 75px;display: inline-block;vertical-align: top;}
+.col8-hh-full img {width: 100%;max-width: 75px;height: auto;}
+.col6-hh-full {width: 100%;max-width: 100px;display: inline-block;vertical-align: top;}
+.col6-hh-full img {width: 100%;max-width: 400px;height: auto;}
+.col5-hh-full {width: 100%;max-width: 120px;display: inline-block;vertical-align: middle;}
+.col5-hh-full img {width: 100%;max-width: 120px;height: auto;}
+.col4-hh-full {width: 100%;max-width: 150px;display: inline-block;vertical-align: middle;}
+.col4-hh-full img {width: 100%;max-width: 150px;height: auto;}
+.col3-hh-full {width: 100%;max-width: 200px;display: inline-block; vertical-align: top;}
+.col3-hh-full img {width: 100%;max-width: 200px;height: auto;}
+.col83-hh-full {width: 100%;max-width: 225px;display: inline-block;vertical-align: top;}
+.col83-hh-full img {width: 100%;max-width: 225px;height: auto;}
+.col52-hh-full {width: 100%;max-width: 240px;display: inline-block;vertical-align: top;}
+.col52-hh-full img {width: 100%;max-width: 240px;height: auto;}
+.col2-hh-full {width: 100%;max-width: 300px;display: inline-block;vertical-align: top;}
+.col2-hh-full img {width: 100%;max-width: 300px;height: auto;}
+.col53-hh-full {width: 100%;max-width: 360px;display: inline-block;vertical-align: top;}
+.col53-hh-full img {width: 100%;max-width: 360px;height: auto;}
+.col85-hh-full {width: 100%;max-width: 375px;display: inline-block;vertical-align: top;}
+.col85-hh-full img {width: 100%;max-width: 375px;height: auto;}
+.col64-hh-full {width: 100%;max-width: 400px;display: inline-block;vertical-align: top;}
+.col64-hh-full img {width: 100%;max-width: 400px;height: auto;}
+.col86-hh-full {width: 100%;max-width: 450px;display: inline-block;vertical-align: top;}
+.col86-hh-full img {width: 100%;max-width: 450px;height: auto;}
+.col54-hh-full {width: 100%;max-width: 480px;display: inline-block;vertical-align: top;}
+.col54-hh-full img {width: 100%;max-width: 480px;height: auto;}
+.col65-hh-full {width: 100%;max-width: 500px;display: inline-block;vertical-align: top;}
+.col65-hh-full img {width: 100%;max-width: 500px;height: auto;}
+.col87-hh-full {width: 100%;max-width: 525px;display: inline-block;vertical-align: top;}
+.col87-hh-full img {width: 100%;max-width: 525px;height: auto;}
 
 
 /* CONTENTS ALIGNMENTS */
@@ -158,10 +157,6 @@ img {border: 0;}
 .contents-left {width: 100%; text-align: left; vertical-align: top;}
 .contents-center {width: 100%; text-align: center; vertical-align: top;}
 .contents-right {width: 100%; text-align: right; vertical-align: top;}
-.contents-justify-middle {width: 100%; text-align: justify; vertical-align: middle !important;}
-.contents-left-middle {width: 100%; text-align: left; vertical-align: middle !important;}
-.contents-center-middle {width: 100%; text-align: center; vertical-align: middle !important;}
-.contents-right-middle {width: 100%; text-align: right; vertical-align: middle !important;}
 
 
 /* ALL PADDINGS */
