@@ -47,9 +47,8 @@ table {border-spacing: 0;}
 td {padding: 0;}
 img {border: 0;}
 .wrapper {width: 100%;table-layout: fixed;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
-.webkit {max-width: 600px;}
+.webkit {width:100%;max-width: 600px;margin:0-auto;}
 .outer {Margin: 0 auto;width: 100%;max-width: 600px;}
-
 
 
 /* ///////////// STRUCTURE GRID ///////////// */
