@@ -15,6 +15,36 @@ For example, i have made diffrent class in my CSS to style my typographic elemen
 
 if i want to change my heading from .h4 to .h1, i just have to change the class into the <td> like this :
 
+`
+<table>
+  <tr>
+    <td class="h4">
+      Hello
+    </td>
+  </tr>
+</table>
+`
+  
+becomes
+  
+`
+<table>
+  <tr>
+    <td class="h1">
+      Hello
+    </td>
+  </tr>
+</table>
+`
+  
+this is the same method for every element in the framework from the columns to the styles
+  
+once all the css is set, use an inliner like https://inliner.cm/ to set the css inside the html and the mail is good to go.
+  
+## ATTENTION
+  
+a few things have to be known to have a good e-mail :
+  
+when changing a column, set the wright width into the outlooks conditionnal comments and into the image inside it (if you put one into it) taking account of the padding you set in the td containing the image (in a 300px width column with a .inner10 class applied to the td inside it, the image inside the td would be 280px wide)
 
-
-thanks to Nicole Merlin for this exellent tutorial.
+there is more information in the commentaries inside the HTML and the CSS files on how to use the grid and how to use the inliner to get the e-mail done
