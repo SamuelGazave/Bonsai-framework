@@ -15,7 +15,6 @@ For example, i have made diffrent class in my CSS to style my typographic elemen
 
 if i want to change my heading from .h4 to .h1, i just have to change the class into the <td> like this :
 
-`
 <table>
   <tr>
     <td class="h4">
@@ -23,11 +22,9 @@ if i want to change my heading from .h4 to .h1, i just have to change the class 
     </td>
   </tr>
 </table>
-`
   
 becomes
   
-`
 <table>
   <tr>
     <td class="h1">
@@ -35,7 +32,6 @@ becomes
     </td>
   </tr>
 </table>
-`
   
 this is the same method for every element in the framework from the columns to the styles
   
