@@ -13,25 +13,7 @@ HTML and CSS comes into separates files so HTML is lighter when you are creating
 
 For example, i have made diffrent class in my CSS to style my typographic elements that are .h1 .h2 .h3 .h4 etc...
 
-if i want to change my heading from .h4 to .h1, i just have to change the class into the <td> like this :
-
-<table>
-  <tr>
-    <td class="h4">
-      Hello
-    </td>
-  </tr>
-</table>
-  
-becomes
-  
-<table>
-  <tr>
-    <td class="h1">
-      Hello
-    </td>
-  </tr>
-</table>
+if i want to change my heading from .h4 to .h1, i just have to change the class into the text container.
   
 this is the same method for every element in the framework from the columns to the styles
   
