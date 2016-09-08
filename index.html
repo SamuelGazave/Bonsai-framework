@@ -19,7 +19,84 @@
     </section>
 
     <section class="main-content">
-      <p>Hi i'm Samuel. In my curent job i build a lot of e-mail campaigns and as html email can be tricky, i built a tool to help me create solid templates and newsletters very fast. It comes with a grid system and pre-built elements i use the most in my creations in order <strong>to help graphic designers to easily create mobile friendly designs</strong>.</p>
+      <p><strong>Hi i'm Samuel.</strong></p>
+
+<p>In my curent job i build a lot of e-mail campaigns and as html email can be tricky, i built a tool to help me create solid templates and newsletters very fast. It comes with a grid system and pre-built elements i use the most in my creations in order <strong>to help graphic designers to easily create mobile friendly designs</strong>. </p>
+
+<h2>
+<a id="strengths" class="anchor" href="#strengths" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>strengths</h2>
+
+<ol>
+<li><p>The grid Helps graphic designers to understand how heir creation will behave on mobile devices. Coders can also use it to quickly slice the PSD files graphic designers gives them.<br>
+As i cann see most of the time, those who create e-mails on photoshop are not allways those who code them (most of the designers who sends me PSDs design for print but have very few web design understanding).<br>
+This tool helps everyone working together to get a better result on responsive e-mail design.</p></li>
+<li><p>The HTML is separate from the CSS. It allows me to easaly maintain a graphic chart on a large collection of templates linked to the CSS file.<br>
+For example, when changing from winter to summer collection, i just have to change colors or type styles into the CSS file and my entire collection is up-to-date.<br>
+This is also a good way to have a typographic constancy within my e-mail collection as i set the differnt styles in the CSS before apply the correpondant classes in my HTML.</p></li>
+<li><p>Using an inliner to mount e-mails is a good way to avoid errors when coding. It allows me to manage links, alt or title tags in a HTML file free from any style and when it's done, the inliner gets all my css inline for me. I can't forget anything and my e-mail is good to go.</p></li>
+</ol>
+
+<h2>
+<a id="weaknesses" class="anchor" href="#weaknesses" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Weaknesses</h2>
+
+<p>When an e-mail is broken, it usualy is because of theses points :</p>
+
+<ol>
+<li><p>Outlook conditionnal comments width don't match the actual size of the columns. I have to pay attention to this each time i have to work on an e-mail but when i forget, the error is easy to find and repair.</p></li>
+<li><p>The size in the whidth tag of  an image don't match the size it must have in a column with padding applied arround it. it causes Outlook to display the image shorter or wider than it should be. It is also an error easy to find and repair.</p></li>
+</ol>
+
+<h1>
+<a id="the-grid" class="anchor" href="#the-grid" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The grid</h1>
+
+<p>The structure of the e-mail is made of a table container. Inside of this table, i have stages with the class row  </p>
+
+<p>`
+</p>
+
+
+<ul>
+<li>columns goes here -
+</li>
+</ul>
+
+`<br>
+inside the rows, each column is a div surrouded by conditionnal comments for Outlook like this:
+
+
+<p><code>
+&lt;tr&gt;
+                        &lt;td class="row"&gt;
+                            &lt;!--[if (gte mso 9)|(IE)]&gt;
+                            &lt;table width="600"&gt;
+                            &lt;tr&gt;
+                            &lt;td width="300" valign="top"&gt;
+                            &lt;![endif]--&gt;
+                            &lt;div class="col2"&gt;
+                                &lt;table width="100%"&gt;
+                                    &lt;tr&gt;
+                                        &lt;td class="inner10 contents-center modulespacer" style="background-color:#f292ad; border:1px solid crimson;"&gt;
+                                            col2&lt;br&gt;&lt;span class="modulespacersmall"&gt;300px&lt;/span&gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                            &lt;/div&gt;&lt;!--[if (gte mso 9)|(IE)]&gt;&lt;/td&gt;&lt;td width="300" valign="top"&gt;&lt;![endif]--&gt;&lt;div class="col2"&gt;
+                                &lt;table width="100%"&gt;
+                                    &lt;tr&gt;
+                                        &lt;td class="inner10 contents-center modulespacer" style="background-color:#f292ad; border:1px solid crimson;"&gt;
+                                            col2&lt;br&gt;&lt;span class="modulespacersmall"&gt;300px&lt;/span&gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                            &lt;/div&gt;
+                            &lt;!--[if (gte mso 9)|(IE)]&gt;
+                            &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;/table&gt;
+                            &lt;![endif]--&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+</code></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/SamuelGazave/Bonsai-framework">Bonsaï</a> is maintained by <a href="https://github.com/SamuelGazave">SamuelGazave</a>.</span>
