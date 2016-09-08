@@ -21,19 +21,31 @@
     <section class="main-content">
       <p><strong>Hi i'm Samuel.</strong></p>
 
-<p>In my curent job i build a lot of e-mail campaigns and as html email can be tricky, i built a tool to help me create solid templates and newsletters very fast. It comes with a grid system and pre-built elements i use the most in my creations in order <strong>to help graphic designers to easily create mobile friendly designs</strong>. </p>
+<p>In my curent job i build a lot of e-mail campaigns and as html email can be tricky, i built a tool based on the fluid-hybrid method to create solid templates and newsletters very fast. It comes with a grid system and pre-built elements i use the most in my creations in order <strong>to help graphic designers to easily create mobile friendly designs</strong>. </p>
 
 <h2>
 <a id="strengths" class="anchor" href="#strengths" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>strengths</h2>
 
 <ol>
-<li><p>The grid Helps graphic designers to understand how heir creation will behave on mobile devices. Coders can also use it to quickly slice the PSD files graphic designers gives them.<br>
+<li>
+<p><strong>The grid Helps graphic designers to understand how heir creation will behave on mobile devices.</strong></p>
+
+<p>Coders can also use it to quickly slice the PSD files graphic designers gives them.<br>
 As i cann see most of the time, those who create e-mails on photoshop are not allways those who code them (most of the designers who sends me PSDs design for print but have very few web design understanding).<br>
-This tool helps everyone working together to get a better result on responsive e-mail design.</p></li>
-<li><p>The HTML is separate from the CSS. It allows me to easaly maintain a graphic chart on a large collection of templates linked to the CSS file.<br>
+This tool can help everyone working together to get a better result on responsive e-mail design.</p>
+</li>
+<li>
+<p><strong>The HTML is separate from the CSS.</strong></p>
+
+<p>It allows me to easaly maintain a graphic chart on a large collection of templates linked to the CSS file.<br>
 For example, when changing from winter to summer collection, i just have to change colors or type styles into the CSS file and my entire collection is up-to-date.<br>
-This is also a good way to have a typographic constancy within my e-mail collection as i set the differnt styles in the CSS before apply the correpondant classes in my HTML.</p></li>
-<li><p>Using an inliner to mount e-mails is a good way to avoid errors when coding. It allows me to manage links, alt or title tags in a HTML file free from any style and when it's done, the inliner gets all my css inline for me. I can't forget anything and my e-mail is good to go.</p></li>
+This is also a good way to have a typographic constancy within my e-mail collection as i set the differnt styles in the CSS before apply the correpondant classes in my HTML.</p>
+</li>
+<li>
+<p><strong>Using an inliner to mount e-mails is a good way to avoid errors when coding.</strong></p>
+
+<p>It allows me to manage links, alt or title tags in a HTML file free from any style and when it's done, the inliner gets all my css inline for me. I can't forget anything and my e-mail is good to go.</p>
+</li>
 </ol>
 
 <h2>
@@ -42,61 +54,310 @@ This is also a good way to have a typographic constancy within my e-mail collect
 <p>When an e-mail is broken, it usualy is because of theses points :</p>
 
 <ol>
-<li><p>Outlook conditionnal comments width don't match the actual size of the columns. I have to pay attention to this each time i have to work on an e-mail but when i forget, the error is easy to find and repair.</p></li>
-<li><p>The size in the whidth tag of  an image don't match the size it must have in a column with padding applied arround it. it causes Outlook to display the image shorter or wider than it should be. It is also an error easy to find and repair.</p></li>
+<li>
+<p><strong>When Outlook conditionnal comments width don't match the actual size of the columns.</strong></p>
+
+<p>I have to pay attention to this each time i have to work on an e-mail but when i forget, the error is easy to find and repair.</p>
+</li>
+<li>
+<p><strong>The size in the whidth tag of an image don't match the size it must have in a column with padding applied arround it.</strong></p>
+
+<p>It causes Outlook to display the image shorter or wider than it should be. It is also an error easy to find and repair.</p>
+</li>
 </ol>
 
+<hr>
+
+<p><strong>What follows is a short presentation of how it works.</strong><br>
+Open the HTML and CSS files in your text editor, you will se comments and classes i don't list here and ways to use it.</p>
+
+<hr>
+
 <h1>
-<a id="the-grid" class="anchor" href="#the-grid" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The grid</h1>
+<a id="the-html-structure" class="anchor" href="#the-html-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The HTML structure</h1>
 
 <p>The structure of the e-mail is made of a table container. Inside of this table, i have stages with the class row  </p>
 
-<p>`
-</p>
-
-
-<ul>
-<li>columns goes here -
-</li>
-</ul>
-
-`<br>
-inside the rows, each column is a div surrouded by conditionnal comments for Outlook like this:
-
-
-<p><code>
+<pre><code>&lt;tr&gt;
+    &lt;td class="row"&gt;
+    contents or columns goes here
+    &lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
-                        &lt;td class="row"&gt;
-                            &lt;!--[if (gte mso 9)|(IE)]&gt;
-                            &lt;table width="600"&gt;
-                            &lt;tr&gt;
-                            &lt;td width="300" valign="top"&gt;
-                            &lt;![endif]--&gt;
-                            &lt;div class="col2"&gt;
-                                &lt;table width="100%"&gt;
-                                    &lt;tr&gt;
-                                        &lt;td class="inner10 contents-center modulespacer" style="background-color:#f292ad; border:1px solid crimson;"&gt;
-                                            col2&lt;br&gt;&lt;span class="modulespacersmall"&gt;300px&lt;/span&gt;
-                                        &lt;/td&gt;
-                                    &lt;/tr&gt;
-                                &lt;/table&gt;
-                            &lt;/div&gt;&lt;!--[if (gte mso 9)|(IE)]&gt;&lt;/td&gt;&lt;td width="300" valign="top"&gt;&lt;![endif]--&gt;&lt;div class="col2"&gt;
-                                &lt;table width="100%"&gt;
-                                    &lt;tr&gt;
-                                        &lt;td class="inner10 contents-center modulespacer" style="background-color:#f292ad; border:1px solid crimson;"&gt;
-                                            col2&lt;br&gt;&lt;span class="modulespacersmall"&gt;300px&lt;/span&gt;
-                                        &lt;/td&gt;
-                                    &lt;/tr&gt;
-                                &lt;/table&gt;
-                            &lt;/div&gt;
-                            &lt;!--[if (gte mso 9)|(IE)]&gt;
+    &lt;td class="row"&gt;
+    contents or columns goes here
+    &lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+
+<p>inside the rows, each column is a div surrouded by conditionnal comments for Outlook like this:</p>
+
+<pre><code>&lt;tr&gt;
+    &lt;td class="row"&gt;
+    &lt;!--[if (gte mso 9)|(IE)]&gt;
+    &lt;table width="600"&gt;
+    &lt;tr&gt;
+    &lt;td width="300" valign="top"&gt;
+    &lt;![endif]--&gt;
+    &lt;div class="col2"&gt;
+        &lt;table width="100%"&gt;
+            &lt;tr&gt;
+                &lt;td class="inner10 contents-center"&gt;
+                contents goes here
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;&lt;!--[if (gte mso 9)|(IE)]&gt;&lt;/td&gt;&lt;td width="300" valign="top"&gt;&lt;![endif]--&gt;&lt;div class="col2"&gt;
+        &lt;table width="100%"&gt;
+            &lt;tr&gt;
+                &lt;td class="inner10 contents-center"&gt;
+                contents goes here
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;!--[if (gte mso 9)|(IE)]&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;![endif]--&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+
+<p>inside each colum is a table where you put all the content you need. text, images, buttons... to style all this, you have access to classes with specific functions.</p>
+
+<hr>
+
+<h1>
+<a id="the-css" class="anchor" href="#the-css" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The CSS</h1>
+
+<h2>
+<a id="grid" class="anchor" href="#grid" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grid</h2>
+
+<p>Here is a graphic presentation of the grid with the class names used to get columns and their width. Each column is a division of 600px so a .col2 class is 300px wide and a .col32 is 400px wide because it takes the place of 2 columns on a line of 3.</p>
+
+<p>in the CSS, it is writen as this :</p>
+
+<pre><code>/* 2 columns */
+.col2 {width: 100%;max-width: 300px;display: inline-block;vertical-align: top;}
+.col2 img {width: 100%;max-width: 300px;height: auto;}
+
+/* 3 columns */
+.col3 {width: 100%;max-width: 200px;display: inline-block;vertical-align: top;}
+.col3 img {width: 100%;max-width: 200px;height: auto;}
+.col32 {width: 100%;max-width: 400px;display: inline-block;vertical-align: top;}
+.col32 img {width: 100%;max-width: 400px;height: auto;}
+</code></pre>
+
+<p>image here</p>
+
+<h2>
+<a id="styles" class="anchor" href="#styles" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Styles</h2>
+
+<p><strong>Align content</strong></p>
+
+<p>to align content on the left, center, right or even justify text i use the "contents" classes. i simply put it on the </p> surronding my content
+
+<p>HTML :</p>
+
+<pre><code>&lt;table width="100%"&gt;
+    &lt;tr&gt;
+        &lt;td class="inner10 contents-center"&gt;
+        contents goes here
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+<p>CSS classes :</p>
+
+<pre><code>.contents-justify {width: 100%; text-align: justify; vertical-align: top;}
+.contents-left {width: 100%; text-align: left; vertical-align: top;}
+.contents-center {width: 100%; text-align: center; vertical-align: top;}
+.contents-right {width: 100%; text-align: right; vertical-align: top;}
+</code></pre>
+
+<p><strong>Add padding and create glutters</strong></p>
+
+<p>To add padding arronud my content i use the "inner" classes. i use it to create glutters between two blocs of contents too. It functions like this :</p>
+
+<p>CSS :</p>
+
+<pre><code>.inner5 {padding: 5px;vertical-align: top;}
+.inner10 {padding: 10px;vertical-align: top;}
+.inner15 {padding: 15px;vertical-align: top;}
+.inner20 {padding: 20px;vertical-align: top;}
+.inner30 {padding: 30px;vertical-align: top;}
+</code></pre>
+
+<p>HTML with a glutter beetween two blocs of content :</p>
+
+<pre><code>&lt;tr&gt;
+    &lt;td class="row"&gt;
+    &lt;!--[if (gte mso 9)|(IE)]&gt;
+    &lt;table width="600"&gt;
+    &lt;tr&gt;
+    &lt;td width="300" valign="top"&gt;
+    &lt;![endif]--&gt;
+    &lt;div class="col2"&gt;
+        &lt;table width="100%"&gt;
+            &lt;tr&gt;
+                &lt;td class="inner10"&gt;
+                    &lt;table width="100%"&gt;
+                        &lt;tr&gt;
+                            &lt;td class="inner10 contents-center"&gt;
+                            contents goes here. As you can see, this table is inside
+                            anoter table with an inner10 class set on its &lt;td&gt;. with a background
+                            color on the inside table, i have two blocs of content witch will
+                            remain at equal distance from each oter but remain fluid on mobile.
                             &lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;/table&gt;
-                            &lt;![endif]--&gt;
-                        &lt;/td&gt;
-                    &lt;/tr&gt;
-</code></p>
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;&lt;!--[if (gte mso 9)|(IE)]&gt;&lt;/td&gt;&lt;td width="300" valign="top"&gt;&lt;![endif]--&gt;&lt;div class="col2"&gt;
+        &lt;table width="100%"&gt;
+            &lt;tr&gt;
+                &lt;td class="inner10"&gt;
+                    &lt;table width="100%"&gt;
+                        &lt;tr&gt;
+                            &lt;td class="inner10 contents-center"&gt;
+                            contents goes here. As you can see, this table is inside
+                            anoter table with an inner10 class set on its &lt;td&gt;. with a background
+                            color on the inside table, i have two blocs of content witch will
+                            remain at equal distance from each oter but remain fluid on mobile.
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;!--[if (gte mso 9)|(IE)]&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;![endif]--&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+
+<p><strong>Type</strong></p>
+
+<p>I create classes in the css and i apply them in my HTML file. this gives me typographic constancy over all the e-mails related to a CSS file</p>
+
+<p>CSS :</p>
+
+<pre><code>td {font-family:Arial, Helvetica, sans-serif;font-size: 14px;-webkit-font-smoothing: antialiased;}
+p {Margin: 0;font-size: 14px;-webkit-font-smoothing: antialiased;}
+.small {Margin: 0;font-size: 12px; font-weight: 700;-webkit-font-smoothing: antialiased;}
+a {text-decoration: none;-webkit-font-smoothing: antialiased; color:#000000;}
+.h1 {font-family:Arial, Helvetica, sans-serif;font-size: 28px;font-weight: 700;font-style: normal;Margin-bottom: 18px;-webkit-font-smoothing: antialiased;}
+.h2 {font-family:Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 700;Margin-bottom: 12px;-webkit-font-smoothing: antialiased;}
+.h3 {font-family:Arial, Helvetica, sans-serif;font-size: 14px;font-weight: 400;Margin-bottom: 12px;-webkit-font-smoothing: antialiased;}
+.h4 {font-family:Arial, Helvetica, sans-serif;font-size: 12px;font-weight: 400;Margin-bottom: 12px;-webkit-font-smoothing: antialiased;}
+.h5 {font-family:Arial, Helvetica, sans-serif;font-size: 10px;font-weight: 400;Margin-bottom: 12px;-webkit-font-smoothing: antialiased;}
+</code></pre>
+
+<p><strong>Buttons</strong></p>
+
+<p>there is an exemple of a basic button :</p>
+
+<p>HTML :</p>
+
+<pre><code>&lt;table border="0" cellspacing="0" cellpadding="0" class="btn"&gt;
+    &lt;tr&gt;
+        &lt;td align="center" style="border-radius: 4px;" &gt;&lt;a href="" target="_blank" title=""&gt;DISCOVER&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+<p>CSS :</p>
+
+<p>.btn {display: inline-block; text-align: center;}
+   .btn a {font-size: 14px; font-family:Arial, Helvetica, sans-serif; background-color: #000000; color: #ffffff; font-weight: 700; text-decoration: none; border: 10px solid #000000; display: inline-block;-webkit-font-smoothing: antialiased;}
+   .btn a:hover{background-color: #ffffff !important; border-color:#ffffff !important; color:#000000 !important;}</p>
+
+<p><strong>How to style an entire bloc</strong></p>
+
+<p>to style an entire bloc including background colors and type (colors, weight, size if necessary) i proceed like this :</p>
+
+<p>HTML :</p>
+
+<pre><code>&lt;table width="100%"&gt;
+    &lt;tr&gt;
+        &lt;td class="inner10 contents-center edito"&gt;
+            &lt;span class="h1"&gt;My title&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+            my editorial content is editorial.
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+<p>CSS:</p>
+
+<pre><code>.edito {font-size: 16px; line-height: 20px; color:#000000;}
+.edito .h1, .edito .h2 {color:#000000;}
+.edito .h3 {font-weight: 700; color:#000000; }
+.edito .h1 {line-height: 30px;}
+</code></pre>
+
+<p>This way, all the elements inside the </p> gain the propriety specified for him. If i want another bloc of my e-mail to have this style too, i just have to apply the class <em>edito</em> to him.
+
+<hr>
+
+<h1>
+<a id="using-an-inliner" class="anchor" href="#using-an-inliner" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using an inliner</h1>
+
+<ol>
+<li><p>replace <code>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</code> by <code>&lt;style type="text/css"&gt;&lt;/style&gt;</code> in your HTML.</p></li>
+<li><p>Copy the content of your css file inside it.</p></li>
+<li><p>select all your html, copy it into an inliner like <a href="https://inliner.cm">https://inliner.cm</a> (this one is verry good)</p></li>
+<li><p>replace your html by what the inliner gives you (as you can see, all the cs is now inline) and delete the <code>&lt;style type="text/css"&gt;&lt;/style&gt;</code> you previously created because now that your css is inline you don't need this any more.</p></li>
+</ol>
+
+<h2>
+<a id="this-way-my-e-mail-is-good-to-go" class="anchor" href="#this-way-my-e-mail-is-good-to-go" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>this way my e-mail is good-to-go</h2>
+
+<p><strong>If i want my e-mail to look verry good on the mobile application that care about media queries</strong></p>
+
+<p>I can replace my <code>&lt;style type="text/css"&gt;&lt;/style&gt;</code> by this :</p>
+
+<pre><code>&lt;style type="text/css"&gt;
+    @media screen and (max-width: 320px){
+        .menu{display: none !important;}
+    }
+
+    @media screen and (max-width: 400px) {
+        .col2, .col3, .col32, .col42, .col43, .col52, .col53, .col54, .col62, .col63, .col64, .col65, .col83, .col84, .col85, .col86, .col87, .sidebar200, .sidebar240,             .sidebar300, .sidebar360, .sidebar400, .sidebar450, .sidebar480, .sidebar500, {max-width: 100% !important;}    
+        .col4, .col5 {max-width: 50% !important;}
+        .col6 {max-width: 33% !important;}
+        .col8 {max-width: 25% !important;}
+        .col82 {max-width: 75% !important;}
+        .col2 img, .col3 img, .col32 img, .col4 img, .col42 img, .col43 img, .col5 img, .col52 img, .col53 img, .col54 img, .col6 img, .col62 img, .col63 img, .col64 img,             .col65 img, .colprod1 img {max-width: 100% !important;}   
+        .sidebar200 img, .sidebar240 img, .sidebar300 img, .sidebar360 img, .sidebar400 img, .sidebar450 img, .sidebar480 img, .sidebar500 img {max-width: 100% !important;}
+
+        /* center text and buttons */
+        .contents-justify, .contents-left, .contents-right, .contents-justify-middle, .contents-left-middle, .contents-right-middle {text-align: center !important;}
+    }
+
+    @media screen and (max-width: 590px) {
+        .col2 img, .sidebar240 {max-width: 100% !important;}
+        .col2 .prod {max-width: 100% !important;}
+        .col32 .contents-justify, .col32 .contents-left, .col32 .contents-right, .footer-left .contents-right, .footer-right .contents-left {font-size: 16px;text-align:             center !important;}
+    }
+
+    @media screen and (min-width: 401px) and (max-width: 620px) {
+        .col3, .col62 {max-width: 33% !important;}
+        .col2, .col42, .col63 {max-width: 50% !important;}
+        .col4 {max-width: 25% !important;}
+        .col5 {max-width: 20% !important;}
+        .col6 {max-width: 16% !important;}
+    }
+&lt;/style&gt;
+</code></pre>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/SamuelGazave/Bonsai-framework">Bonsaï</a> is maintained by <a href="https://github.com/SamuelGazave">SamuelGazave</a>.</span>
