@@ -174,7 +174,7 @@ img {border: 0;}
 
 
 /* FIXED IMAGES */
-.logo {width: 180px !important; height: 50px !impotant;}
+.logo {width: 180px !important; height: 50px !important;}
 .imgfooter {width: 37px !important; height: 37px !important; vertical-align: middle;margin-left: 5px;margin-right: 5px;}
 .imgsocial {width: 27px !important; height: 27px !important; vertical-align: middle;margin-left: 5px;margin-right: 5px;}
 
@@ -204,17 +204,17 @@ a {text-decoration: none;-webkit-font-smoothing: antialiased;}
 
 /* BUTTONS */
 /* large */
-.btn {display: inline-block; text-align: center;}
+.btn {display: inline-block;}
 .btn a {font-size: 14px; font-family: 'Quicksand', sans-serif; background-color: #333333; color: #ffffff; font-weight: 700; text-decoration: none; border: 8px solid #333333; border-radius: 4px; display: inline-block;-webkit-font-smoothing: antialiased;}
 .btn a:hover{background-color: #ffffff !important; border-color:#ffffff !important; color:#333333 !important;}
 
 /* small */
-.btn-small {display: inline-block; text-align: center;}
+.btn-small {display: inline-block;}
 .btn-small a {font-size: 11px; font-family: 'Quicksand', sans-serif; background-color: #333333; color: #ffffff; font-weight: 700; text-decoration: none; border: 6px solid #333333; border-radius: 3px; display: inline-block;-webkit-font-smoothing: antialiased;}
 .btn-small a:hover{background-color: #ffffff !important; border-color:#ffffff !important; color:#333333 !important;}
 
 /* extra small */
-.btn-xsmall {display: inline-block; text-align: center;}
+.btn-xsmall {display: inline-block;}
 .btn-xsmall a {font-size: 10px; font-family: 'Quicksand', sans-serif; background-color: #333333; color: #ffffff; font-weight: 700; text-decoration: none; border: 4px solid #333333; border-radius: 2px; display: inline-block;-webkit-font-smoothing: antialiased;}
 .btn-xsmall a:hover{background-color: #ffffff !important; border-color:#ffffff !important; color:#333333 !important;}
 
@@ -224,14 +224,20 @@ a {text-decoration: none;-webkit-font-smoothing: antialiased;}
 .btnw a:hover{background-color: #333333 !important; border-color:#333333 !important; color:#ffffff !important;}
 
 /* white small */
-.btnw-small {display: inline-block; text-align: center;}
+.btnw-small {display: inline-block;}
 .btnw-small a {font-size: 11px; font-family: 'Quicksand', sans-serif; background-color: #ffffff; color: #000000; font-weight: 700; text-decoration: none; border: 6px solid #ffffff; border-radius: 3px; display: inline-block;-webkit-font-smoothing: antialiased;}
 .btnw-small a:hover{background-color: #000000 !important; border-color:#000000 !important; color:#ffffff !important;}
 
 /* white extra small */
-.btnw-xsmall {display: inline-block; text-align: center;}
+.btnw-xsmall {display: inline-block;}
 .btnw-xsmall a {font-size: 10px; font-family: 'Quicksand', sans-serif; background-color: #ffffff; color: #000000; font-weight: 700; text-decoration: none; border: 4px solid #ffffff; border-radius: 2px; display: inline-block;-webkit-font-smoothing: antialiased;}
 .btnw-xsmall a:hover{background-color: #000000 !important; border-color:#000000 !important; color:#ffffff !important;}
+
+/* ghost button */
+.btn-ghost-black {display: inline-block;}
+.btn-ghost-black div {border: 1px solid #333333; border-radius: 4px; }
+.btn-ghost-black a {font-size: 14px; font-family: 'Quicksand', sans-serif; background-color: #ffffff; color: #333333; font-weight: 700; text-decoration: none; border: 8px solid #ffffff; border-radius: 4px; display: inline-block;-webkit-font-smoothing: antialiased;}
+.btn-ghost-black a:hover{background-color: #333333 !important; border-color:#333333 !important; color:#ffffff !important;}
 
 
 /* CODE */
@@ -244,17 +250,14 @@ a {text-decoration: none;-webkit-font-smoothing: antialiased;}
 /* SIMPLE MENU */
 /* It's just a row with styled buttons inside */
 /* the conditionnal comments are important to make the menu look good on outlook. make sure to test your email to see if their size is correct */
-.menua {display: inline-block; text-align: center;}
+.menua {display: inline-block;}
 .menua a {font-size: 11px; font-family: 'Quicksand', sans-serif; color: #333333; font-weight: 700; text-transform: uppercase; text-decoration: none; padding: 4px; display: inline-block;}
 .menua a:hover{background-color: #333333; border-color:#333333; color:#ffffff;}
 
 
 /* ADVANCED MENU */
 .column-large {width: 100%;max-width: 111px;display: inline-block;vertical-align: top;}/* spetial column with width not aligned on the grid (you must adapt the width of the conditionnal comments)*/
-.column-small {width: 100%;max-width: 78px;display: inline-block;vertical-align: top;}/* spetial column with width not aligned on the grid (you mudt adapt the width of the conditionnal comments) */
-.menub {display: inline-block; text-align: center;}
-.menub a {font-size: 11px; font-family: 'Quicksand', sans-serif; color: #333333; font-weight: 700; text-transform: uppercase; text-decoration: none; padding:4px; display: inline-block;}
-.menub a:hover{background-color: #333333; border-color:#333333; color:#ffffff;}
+.column-small {width: 100%;max-width: 78px;display: inline-block;vertical-align: top;}/* spetial column with width not aligned on the grid (you must adapt the width of the conditionnal comments) */
 
 
 /* FOOTER */
